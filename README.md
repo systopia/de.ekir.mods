@@ -6,8 +6,8 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
-* PHP v5.6+
-* CiviCRM (*FIXME: Version number*)
+* PHP v7.1+
+* CiviCRM v5.9+
 
 ## Installation (Web UI)
 
@@ -35,8 +35,8 @@ cv en mods
 
 ## Usage
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Install and have fun not being able to log out anmyore. Great!
 
 ## Known Issues
 
-(* FIXME *)
+* You cannot log out anymore, but this is intended.
