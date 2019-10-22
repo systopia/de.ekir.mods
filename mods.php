@@ -147,6 +147,26 @@ function mods_civicrm_entityTypes (&$entityTypes)
     _mods_civix_civicrm_entityTypes($entityTypes);
 }
 
+/**
+ * Implements hook_civicrm_pageRun(&$page).
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_pageRun/
+ */
+function mods_civicrm_pageRun (&$page)
+{
+    CRM_Mods_RemoveLogOut::onPageRunHook($page);
+}
+
+/**
+ * Implements hook_civicrm_buildForm($formName, &$form).
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_buildForm/
+ */
+function mods_civicrm_buildForm($formName, &$form)
+{
+    CRM_Mods_RemoveLogOut::onBuildFormHook($formName, $form);
+}
+
 // --- Functions below this ship commented out. Uncomment as required. ---
 
 /**
